@@ -1,4 +1,5 @@
 import Chart from 'chart.js';
+import numeral from 'numeral';
 
 new Chart(document.getElementById('my-chart'), {
   type: 'line',
@@ -23,9 +24,24 @@ new Chart(document.getElementById('my-chart'), {
     scales: {
       yAxes: [{
         ticks: {
-          beginAtZero: true
+          beginAtZero: true,
+          callback: value => numeral(value).format('$0,0')
         }
       }]
+    },
+    tooltips: {
+      mode: 'index',
+      callbacks: {
+        label(tooltipItem, data) {
+          // Get the dataset label.
+          const label = data.datasets[tooltipItem.datasetIndex].label;
+
+          // Format the y-axis value.
+          const value = numeral(tooltipItem.yLabel).format('$0,0');
+
+          return `${label}: ${value}`;
+        }
+      }
     }
   }
 });
