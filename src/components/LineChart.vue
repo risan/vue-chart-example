@@ -32,8 +32,21 @@ export default {
     // The chart's options.
     options: Object
   },
+  data() {
+    return {
+      chart: null
+    };
+  },
+  watch: {
+    datasets(newDatasets) {
+      // Replace the datasets and call the update() method on Chart.js
+      // instance to re-render the chart.
+      this.chart.data.datasets = newDatasets;
+      this.chart.update();
+    }
+  },
   mounted() {
-    new Chart(this.$refs.myChart, {
+    this.chart = new Chart(this.$refs.myChart, {
       type: 'line',
       data: {
         labels: this.labels,
@@ -41,6 +54,12 @@ export default {
       },
       options: this.options
     });
+  },
+  beforeDestroy () {
+    // Don't forget to destroy the Chart.js instance.
+    if (this.chart) {
+      this.chart.destroy()
+    }
   }
 }
 </script>
