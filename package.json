@@ -1,11 +1,31 @@
 {
   "name": "vue-chart-example",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Example of Vue Chart Component with Chart.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://risan.io/vue-chart-example",
+  "author": {
+    "name": "Risan Bagja Pradana",
+    "email": "risanbagja@gmail.com",
+    "url": "https://risan.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risan/vue-chart-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/risan/vue-chart-example/issues"
+  },
+  "keywords": [
+    "vue",
+    "chart"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "NODE_ENV=production vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
@@ -16,6 +36,7 @@
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
+    "gh-pages": "^2.0.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
