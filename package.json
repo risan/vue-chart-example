@@ -1,13 +1,13 @@
 {
   "name": "vue-chart-example",
-  "description": "Example of Vue Chart Component with Chart.js",
+  "description": "Vue Chart Component with Chart.js",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://risan.io/vue-chart-example",
+  "homepage": "https://bagja.net/vue-chart-example/",
   "author": {
     "name": "Risan Bagja Pradana",
     "email": "risanbagja@gmail.com",
-    "url": "https://risan.io"
+    "url": "https://bagja.net"
   },
   "repository": {
     "type": "git",
