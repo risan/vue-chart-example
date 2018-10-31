@@ -3,10 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue Chart Example</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- SEO tags -->
+    <meta property="og:title" content="Vue Chart Example">
+    <meta name="author" content="Risan Bagja Pradana">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="A reactive chart component for Vue.js application, powered by Chart.js library">
+    <meta property="og:description" content="A reactive chart component for Vue.js application, powered by Chart.js library">
+    <link rel="canonical" href="https://bagja.net/vue-chart-example/">
+    <meta property="og:url" content="https://bagja.net/vue-chart-example/">
+    <meta property="og:site_name" content="Risan Bagja’s Blog">
+    <meta property="og:image" content="https://bagja.net/img/blog/vue-chart-component-with-chartjs/og.png">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@risanbagja">
+    <meta name="twitter:creator" content="@risanbagja">
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous">
-    <title>Vue Chart Example</title>
+
     <style>
       .container {
         max-width: 720px;
@@ -20,17 +38,42 @@
     <nav class="navbar is-primary">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <h1>Vue Chart Example</h1>
+          <a class="navbar-item" href="https://bagja.net/blog/vue-chart-component-with-chartjs.html">
+            <h1 class="has-text-weight-semibold">
+              <span>📊</span> Vue Chart Example
+            </h1>
           </a>
         </div>
       </div>
     </nav>
+
     <section class="section">
       <div class="container">
         <div id="app"></div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          By <a href="https://bagja.net">Risan Bagja</a> |
+          <a href="https://github.com/risan/vue-chart-example">Source Code</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27136969-14"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-27136969-14', {
+        page_title: 'Vue Chart Example',
+        page_path: '/vue-chart-example',
+        anonymizeIp: true
+      });
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
