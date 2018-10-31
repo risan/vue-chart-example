@@ -1,60 +1,68 @@
 # Vue Chart Component with Chart.js
 
-This is the final working source code from my tutorial: [Vue Chart Component with Chart.js](https://risan.io/vue-chart-component-with-chartjs.html). You can try the demo here: [risan.io/vue-chart-example](https://risan.io/vue-chart-example/).
+A reactive chart component for Vue.js application, powered by [Chart.js](https://www.chartjs.org/) library. This is a final working example from my tutorial: [Vue Chart Component with Chart.js](https://bagja.net/blog/vue-chart-component-with-chartjs.html).
+
+Check out the demo here: [bagja.net/vue-chart-example](https://bagja.net/vue-chart-example/).
 
 ![Vue Chart Example](https://media.giphy.com/media/557HUQUQ7RdMQbX9th/giphy.gif)
 
+## Requirements
+
+The following item is required to run this example:
+
+* [Node.js](https://nodejs.org/)
+
 ## Installation
 
-### 1. Clone this repository
+### 1. Clone the Repository
 
-Clone this repository to your local computer:
+To clone this repository, run the following command on your terminal:
 
-```shell
+```bash
 $ git clone git@github.com:risan/vue-chart-example.git
 ```
 
-### 2. Install the dependencies
+### 2. Install the Dependencies
 
-Next, `CD` into the project directory and install all of the required dependencies:
+Within the project directory, run the following command to install all of the required dependencies:
 
-```shell
-# Go to the project directory.
+```bash
+# Go to the project directory
 $ cd vue-chart-example
 
-# Install all of the dependencies.
+# Install all of the dependencies
 $ npm install
 
-# Or install it with Yarn.
+# Or if you prefer to use Yarn
 $ yarn install
 ```
 
-### 3. Run the application 🎉
+### 3. Run the Application 🎉
 
-To run the application within the development mode, simply type the following command:
+To run the application, run the following command:
 
-```shell
-npm run serve
+```bash
+$ npm run serve
 
 # Or with yarn
-yarn serve
+$ yarn serve
 ```
 
-It will start the development server and you can visit the application at [localhost:8080](http://localhost:8080). Play around with the code on `src` directory, the application will be reloaded automatically if you make any changes.
+The above command will start the development server. Open your browser and visit the application at [localhost:8080](http://localhost:8080).
 
-Other available commands:
+### 4. Build for Production
 
-```shell
-# Build the application for production.
+To build the application for production, run the following command:
+
+```bash
 $ npm run build
 
-# Run the linter.
-$ npm run lint
-
-# Deploy the application to github pages.
-$ npm run deploy
+# Or with yarn
+$ yarn build
 ```
+
+The optimized build files will be available at `dist` directory.
 
 ## License
 
-MIT © [Risan Bagja Pradana](https://risan.io)
+MIT © [Risan Bagja Pradana](https://bagja.net)
