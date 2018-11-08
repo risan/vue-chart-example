@@ -2,7 +2,7 @@
 
 A reactive chart component for Vue.js application, powered by [Chart.js](https://www.chartjs.org/) library. This is a final working example from my tutorial: [Vue Chart Component with Chart.js](https://bagja.net/blog/vue-chart-component-with-chartjs.html).
 
-Check out the demo here: [bagja.net/vue-chart-example](https://bagja.net/vue-chart-example/).
+Check out the demo here: [risan.github.io/vue-chart-example](https://risan.github.io/vue-chart-example/).
 
 ![Vue Chart Example](https://media.giphy.com/media/557HUQUQ7RdMQbX9th/giphy.gif)
 
